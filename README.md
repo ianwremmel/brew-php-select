@@ -11,6 +11,7 @@ Displays the available PHPs
 
 ```bash
 brew-php-select --set php53
+```
 
 Sets the current php version to 5.3
 
