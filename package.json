@@ -1,0 +1,9 @@
+{
+	"name": "brew-php-select",
+	"version": "0.0.1",
+	"dependencies": {
+		"cli": "*",
+		"lodash": "*",
+		"shelljs": "*"
+	}
+}
