@@ -1,6 +1,14 @@
 # brew-php-select
 Easily switches between homebrew-installed php versions
 
+## Installation
+
+The package is not yet in NPM, so install it directory from github:
+
+```bash
+npm install -g  http://github.com/ianwremmel/brew-php-select/tarball/master
+```
+
 ## Usage
 
 ```bash
