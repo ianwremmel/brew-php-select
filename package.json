@@ -1,6 +1,11 @@
 {
 	"name": "brew-php-select",
 	"version": "0.0.1",
+
+	"bin": {
+		"brew-php-select": "./bin/brew-php-select"
+	},
+
 	"dependencies": {
 		"cli": "*",
 		"lodash": "*",
