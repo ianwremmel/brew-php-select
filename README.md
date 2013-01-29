@@ -3,10 +3,10 @@ Homebrew and the [homebrew-php tap](https://github.com/josegonzalez/homebrew-php
 
 ## Installation
 
-The package is not yet in NPM, so install it directly from github:
+Install from npm.
 
 ```bash
-npm install -g  http://github.com/ianwremmel/brew-php-select/tarball/master
+npm install -g  brew-php-select
 ```
 
 Then, add the following to your httpd.conf. (The following step will create ```/usr/local/php```.)
