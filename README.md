@@ -1,34 +1,36 @@
 # brew-php-select
-Easily switches between homebrew-installed php versions
+Homebrew and the [homebrew-php tap]() make it easy enough to install multiple versions of PHP, but they don't make it all that convenient to switch between them. Specifically, the instructions recommend altering your shell's path and your apache config every time you switch versions. This script automates that process and reboots apache for you (if it's running).
 
 ## Installation
 
-The package is not yet in NPM, so install it directory from github:
+The package is not yet in NPM, so install it directly from github:
 
 ```bash
 npm install -g  http://github.com/ianwremmel/brew-php-select/tarball/master
 ```
 
-## Usage
-
-```bash
-brew-php-select
-```
-
-Displays the available PHPs
-
-```bash
-brew-php-select --set php53
-```
-
-Sets the current php version to 5.3
-
-## Apache
-
-To allow apache to easily switch between versions, add the following to httpd.conf.
+Then, add the following to your httpd.conf. (The following step will create ```/usr/local/php```.)
 
 ```bash
 LoadModule php5_module /usr/local/php/libexec/apache2/libphp5.so
 ```
 
-```/usr/local/php``` will be point to the latest minor version of php available for the selected major version.
+Finally, execute the following to ensure all the required symlinks exist (Use whichever php version you actually need.)
+
+```bash
+brew-php-select --set php52
+```
+
+## Example Usage
+
+Display the available PHP brews:
+
+```bash
+brew-php-select
+```
+
+Set the active brew to PHP 5.3
+
+```bash
+brew-php-select --set php53
+```
