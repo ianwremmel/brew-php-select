@@ -6,7 +6,7 @@ Homebrew and the [homebrew-php tap](https://github.com/josegonzalez/homebrew-php
 Install from npm.
 
 ```bash
-npm install -g  brew-php-select
+npm install -g brew-php-select
 ```
 
 Then, add the following to your httpd.conf. (The following step will create ```/usr/local/php```.)
