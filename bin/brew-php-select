@@ -29,4 +29,5 @@ if (options.set) {
 }
 else {
 	bps.list_php_versions();
+	bps.display_current_version();
 }
