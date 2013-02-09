@@ -1,19 +1,17 @@
 {
-	"name": "brew-php-select",
-	"version": "0.0.4",
-
-	"author": {
-		"name": "Ian W. Remmel",
-		"email": "design@ianwremmel.com"
-	},
-
-	"bin": {
-		"brew-php-select": "./bin/brew-php-select"
-	},
-
-	"dependencies": {
-		"cli": "*",
-		"lodash": "*",
-		"shelljs": "*"
-	}
+  "name": "brew-php-select",
+  "version": "0.0.4",
+  "author": {
+    "name": "Ian W. Remmel",
+    "email": "design@ianwremmel.com"
+  },
+  "bin": {
+    "brew-php-select": "./bin/brew-php-select"
+  },
+  "dependencies": {
+    "cli": "*",
+    "lodash": "*",
+    "shelljs": "*",
+    "coffee-script": "~1.4.0"
+  }
 }
