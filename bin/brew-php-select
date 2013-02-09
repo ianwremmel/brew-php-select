@@ -18,7 +18,8 @@ if (!bps.is_php_installed()) {
 }
 
 var options = {
-	set: ['s', 'Set PHP Version', 'string']
+	set: ['s', 'Set PHP Version', 'string'],
+	version: ['v', 'Version']
 };
 
 options = cli.parse(options);
@@ -27,6 +28,10 @@ if (options.set) {
 	bps.deactivate_brews();
 	bps.activate_brew(options.set);
 	bps.change_apache_symlink(options.set);
+}
+else if (options.version) {
+	var pkg = require('../package.json');
+	console.log(pkg.version);
 }
 else {
 	bps.list_php_versions();
