@@ -12,6 +12,6 @@
     "cli": "*",
     "lodash": "*",
     "shelljs": "*",
-    "coffee-script": "~1.4.0"
+    "coffee-script": "~1.12.6"
   }
 }
