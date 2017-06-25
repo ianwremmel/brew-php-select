@@ -1,4 +1,6 @@
 # brew-php-select [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ianwremmel/brew-php-select.svg)](https://greenkeeper.io/)
 Homebrew and the [homebrew-php tap](https://github.com/josegonzalez/homebrew-php) make it easy enough to install multiple versions of PHP, but they don't make it all that convenient to switch between them. Specifically, the instructions recommend altering your shell's path and your apache config every time you switch versions. This script automates that process and reboots apache for you (if it's running).
 
 ## Installation
